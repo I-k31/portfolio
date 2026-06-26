@@ -16,11 +16,7 @@ export const SITE_DATA = {
 
     linkedin: "izan-khan-68a5852a4/",
     github: "I-k31",
-
-    // Google Scholar ID (found in your Scholar profile URL)
-    // Example: https://scholar.google.com/citations?user=YOUR_ID_HERE
-    scholar: "[your-scholar-id]",
-
+    
     // Your email address (use [at] and [dot] to avoid spam bots)
     email: "Izan.kh4@gmail.com",
 
@@ -29,5 +25,5 @@ export const SITE_DATA = {
 
     // Base URL of your deployed site (no trailing slash), e.g. "https://your-username.github.io"
     // Used for Open Graph tags. Leave empty if you haven't deployed yet.
-    siteUrl: "https://whydevils.github.io/astro-scholar/",
+    siteUrl: "https://i-k31.github.io/portfolio",
 };
