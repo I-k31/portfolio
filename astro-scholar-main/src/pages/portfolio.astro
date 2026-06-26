@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout pageTitle="Portfolio">
+    <div class="page-container">
+        <h1>Portfolio</h1>
+
+        <p class="intro-text">
+            A collection of data analytics and data science projects built using Python, SQL, Power BI, and PyTorch.
+        </p>
+
+        <section>
+            <h2>Data Science & Machine Learning</h2>
+            <ul class="custom-list">
+                <li>
+                    <span class="list-item-title">Credit Card Fraud Detection</span>
+                    <span class="list-item-description">
+                        Built a Random Forest classifier on 284,807 transactions achieving an AUC-ROC of 0.9731. 
+                        Applied SMOTE to address severe class imbalance (0.17% fraud), correctly catching 82 of 98 fraud cases in the test set.
+                        <span class="extra-links">Tools: Python, scikit-learn, imbalanced-learn, Seaborn — 2026</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="list-item-title">Image Classification with Pre-Trained ResNet50</span>
+                    <span class="list-item-description">
+                        Built an image classifier using transfer learning with a pre-trained ResNet50 model, capable of classifying images into 1,000 object categories with top-5 confidence scores.
+                        Implemented an end-to-end inference pipeline including preprocessing, normalization, and prediction output.
+                        <span class="extra-links">Tools: Python, PyTorch, torchvision — 2026</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Analytics</h2>
+            <ul class="custom-list">
+                <li>
+                    <span class="list-item-title">Ontario Hotel Performance EDA (2020–2023)</span>
+                    <span class="list-item-description">
+                        Performed EDA on Ontario hotel data across 20+ regions, analyzing occupancy, ADR, and RevPAR trends. 
+                        Found Downtown Toronto had the largest occupancy recovery of 48.4 percentage points from 2020 to 2023.
+                        <span class="extra-links">Tools: Python, pandas, Matplotlib, Seaborn — 2026</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="list-item-title">Multi-Department Revenue Analysis & Dashboard</span>
+                    <span class="list-item-description">
+                        Queried and cleaned 6 years of revenue data (2017–2022) across multiple departments using SQL, then built an interactive Power BI dashboard visualizing department-level trends.
+                        Surfaced that revenue more than doubled from 2017 to 2018 before declining each subsequent year.
+                        <span class="extra-links">Tools: SQL, Power BI — 2026</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+</Layout>

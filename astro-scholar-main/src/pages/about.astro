@@ -1,0 +1,93 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import { SITE_DATA } from '../constants';
+import portraitImage from '../assets/portrait.png';
+
+import '../styles/about.css';
+---
+
+<Layout pageTitle="About">
+    <div class="page-container">
+        <h1>About me</h1>
+
+        <div class="about-content">
+            <div class="about-intro-wrapper centered-column">
+                <div class="about-header centered-column">
+                    <Image src={portraitImage} alt={SITE_DATA.name} class="about-portrait" />
+                    <h2 class="about-name">{SITE_DATA.name}</h2>
+                </div>
+
+                <p class="intro-text">
+                    Fourth-year Mathematics &amp; Statistics student at McMaster University with a focus on 
+                    data analytics and data science. Currently interning as a Data Analyst at Tolmar Inc., 
+                    a pharmaceutical company, where I apply analytical skills in a real-world industry setting. 
+                    I enjoy turning raw data into clear, actionable insights through Python, SQL, and Power BI.
+                </p>
+            </div>
+
+            <section>
+                <h2>Technical Skills</h2>
+                <ul class="custom-list">
+                    <li>
+                        <span class="list-item-title">Languages & Querying</span>
+                        <span class="list-item-description">Python (pandas, scikit-learn, PyTorch, Matplotlib, Seaborn), R, SQL</span>
+                    </li>
+                    <li>
+                        <span class="list-item-title">Visualization & Reporting</span>
+                        <span class="list-item-description">Power BI, DAX, Power Query, Tableau, Excel</span>
+                    </li>
+                    <li>
+                        <span class="list-item-title">Cloud & Data Engineering</span>
+                        <span class="list-item-description">Google Cloud Platform (BigQuery), ETL pipelines</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <ul class="work-list icon-list">
+                    <li>
+                        <div class="list-entry">
+                            <h3>Analyst Intern — Incoming</h3>
+                            <p class="institution">Tolmar Inc., Pharmaceutical Industry</p>
+                            <p>September – December 2026</p>
+                            <p>Supporting data analytics work within a pharmaceutical company context, 
+                            applying skills in data processing, reporting, and analysis to real-world business problems.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Volunteer Experience</h2>
+                <ul class="work-list icon-list">
+                    <li>
+                        <div class="list-entry">
+                            <h3>Youth STEM Volunteer</h3>
+                            <p class="institution">Mathstronaut's Spark Program — Hamilton, ON | May 2026 – June 2026</p>
+                            <p>Supported numeracy-focused workshops for Grade 3–5 students in partnership with 
+                            Hamilton Regional Indian Centre, YMCA Beyond the Bell, and Hamilton Public Library. 
+                            Provided one-on-one assistance to help struggling learners build confidence in 
+                            mathematical concepts, and assisted with session logistics and material preparation.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+    <h2>Education</h2>
+    <ul class="education-list icon-list">
+        <li>
+            <div class="education-entry">
+                <h3>McMaster University — Hamilton, ON</h3>
+                <p class="institution">HBSc in Mathematics & Statistics</p>
+                <p class="grade">May 2023 – Present</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+        </div>
+    </div>
+</Layout>
